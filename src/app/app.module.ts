@@ -8,6 +8,7 @@ import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const myRoute=[
   {
@@ -15,7 +16,7 @@ const myRoute=[
     component:AddproductComponent
   },
   {
-    path:"view",
+    path:"viewproduct",
     component:ViewproductComponent
   }
 ]
@@ -24,7 +25,8 @@ const myRoute=[
   declarations: [
     AppComponent,
     AddproductComponent,
-    ViewproductComponent
+    ViewproductComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
