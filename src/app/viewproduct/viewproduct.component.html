@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <h2>List of all Courses</h2>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Product Code</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Manufacture Date</th>
+                            <th scope="col">Expiry Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor ="let i of data">
+                                <td>{{i.productcode}}</td>
+                                <td>{{i.productname}}</td>
+                                <td>{{i.exp_dte}}</td>
+                                <td>{{i.man_date}}</td>
+                              </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
